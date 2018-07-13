@@ -1,21 +1,26 @@
-.nav-bar{
+.main-page{
+    height: 100vh;
+}
+
+
+
+
+
+
+/* .nav-bar{
     grid-area: nav;
 }
 
 .chat-window{
     grid-area: cwindow;
 }
-/* .heading{
-    grid-area: heading;
-} */
+
 .main-page{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-grid-template-rows: [row1-start] auto [row2-start] calc(100vh - 72px);
-    /* grid-template-rows: repeat(3, 250px [col-start]); */
-    /* grid-template-rows:repeat(3, [col-start] fit-content(25%) [col-end]); */
+    grid-template-rows: [row1-start] auto [row2-start] calc(100vh - 40px);
     grid-template-areas: 
       
       "nav nav nav nav"
       "cwindow cwindow cwindow cwindow";
-}
+} */

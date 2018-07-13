@@ -1,3 +1,28 @@
+/* .message-box{
+  
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: 38px;
+  grid-template-areas: 
+  
+  ". . input input input input input input input input clear send"; 
+}
+.input{
+  grid-area: input;
+}
+.clear{
+  grid-area: clear;
+}
+.send{
+grid-area: send;
+}
+
+.input .message-input{
+height: 38px;
+} */
+
+/*old css*/
+
 .message-box {
   position: relative;
   width: 100%;
@@ -42,8 +67,6 @@
     background: transparent;
     text-transform: uppercase;
     line-height: 1;
-    /* padding: 8px; */
-    /* outline: 0!important; */
     width: 40px;
     height: 40px;
   }

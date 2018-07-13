@@ -19,8 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-         "styles.css",
-         "../node_modules/font-awesome/css/font-awesome.css"
+        "styles.css",
+        "../node_modules/font-awesome/css/font-awesome.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
@@ -56,6 +56,11 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "component": {},
+    "serve": {
+      "ssl": true,
+      "sslKey": "./ssl/server.key",
+      "sslCert": "./ssl/server.crt"
+    }
   }
 }
