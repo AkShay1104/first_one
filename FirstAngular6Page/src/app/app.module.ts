@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 //import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,9 @@ import { MsgToComponent } from './chat-window/message-window/msg-to/msg-to.compo
 import { MsgFromComponent } from './chat-window/message-window/msg-from/msg-from.component';
 import { MessageService } from './services/message.service';
 import { MsgHookDirective } from './directives/msg-hook.directive';
+import { HttpClientModule } from '@angular/common/http';
+import { DialogflowService } from './services/dialogflow.service';
+import { LoginService } from './services/login.service';
 
 
 @NgModule({
@@ -33,10 +37,11 @@ import { MsgHookDirective } from './directives/msg-hook.directive';
   imports: [
     BrowserModule,
     AngularFontAwesomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
     //NgbModule.forRoot()
   ],
-  providers: [MessageService],
+  providers: [MessageService, DialogflowService, LoginService],
   entryComponents: [MsgToComponent,MsgFromComponent ],
   bootstrap: [AppComponent]
 })

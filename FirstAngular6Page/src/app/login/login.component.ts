@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginService } from '../services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -8,11 +9,12 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router,private sigin:LoginService) { }
 
   ngOnInit() {
   }
 onLogin(){
 this.router.navigate(['/chatbot']);
+this.sigin.loginCheck();
 }
 }

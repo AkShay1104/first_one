@@ -4,5 +4,7 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  'dialogflowUrl':'https://api.api.ai/v1/query?v=20150910',
+  'accessToken':'8a308b4beb8d4d8b9668320ba8d370f8'
 };
