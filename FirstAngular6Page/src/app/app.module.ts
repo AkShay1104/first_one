@@ -11,6 +11,10 @@ import { MessageWindowComponent } from './chat-window/message-window/message-win
 import { OutputWindowComponent } from './chat-window/output-window/output-window.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing-module';
+import { MsgToComponent } from './chat-window/message-window/msg-to/msg-to.component';
+import { MsgFromComponent } from './chat-window/message-window/msg-from/msg-from.component';
+import { MessageService } from './services/message.service';
+import { MsgHookDirective } from './directives/msg-hook.directive';
 
 
 @NgModule({
@@ -21,7 +25,10 @@ import { AppRoutingModule } from './app-routing-module';
     TextSideComponent,
     MessageWindowComponent,
     OutputWindowComponent,
-    LoginComponent
+    LoginComponent,
+    MsgToComponent,
+    MsgFromComponent,
+    MsgHookDirective
   ],
   imports: [
     BrowserModule,
@@ -29,7 +36,8 @@ import { AppRoutingModule } from './app-routing-module';
     AppRoutingModule
     //NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [MessageService],
+  entryComponents: [MsgToComponent,MsgFromComponent ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

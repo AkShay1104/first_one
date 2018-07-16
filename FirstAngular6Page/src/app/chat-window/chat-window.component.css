@@ -17,6 +17,7 @@ grid-template-areas:
 }
 .message-window{
     grid-area: mwindow;
+    overflow-y: scroll;
 }
 .message-box{
     grid-area: mbox;
