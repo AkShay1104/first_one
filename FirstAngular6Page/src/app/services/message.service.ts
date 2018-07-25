@@ -10,7 +10,8 @@ import { MsgFromComponent } from "../chat-window/message-window/msg-from/msg-fro
 export class MessageService{
     newMsg= new EventEmitter<MsgItemModel>();
     private messages: MsgItemModel =
-        new MsgItemModel(MsgFromComponent,'Hello, I am your bot. How can i help you?');
+        new MsgItemModel(MsgFromComponent,{'msg':'Hello, I am your bot. How can i help you?',
+    'date':'16-07-2018'});
 
     getMsg(){
         return this.messages;
@@ -21,11 +22,11 @@ export class MessageService{
     }
 
     onNewMsg(msg:string){
-        this.messages = new MsgItemModel(MsgToComponent,msg);
+        this.messages = new MsgItemModel(MsgToComponent,{'msg':msg,'date':'16-07-2020'});
         this.newMsg.emit(this.messages);
     }
     onNewResponse(msg:string){
-        this.messages = new MsgItemModel(MsgFromComponent,msg);
+        this.messages = new MsgItemModel(MsgFromComponent,{'msg':msg,'date':'16-07-1995'});
         this.newMsg.emit(this.messages);
     }
 }

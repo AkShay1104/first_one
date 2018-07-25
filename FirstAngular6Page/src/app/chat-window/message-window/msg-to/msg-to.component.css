@@ -1,0 +1,58 @@
+
+.msg-from .msg-from-container{
+      text-align: right;
+    }
+      .msg-from  .msg-from-container p.text-paragraph{
+        background-color: #1476c6;;
+        color: #FFF;
+        padding: 5px 10px;
+        display: inline-block;
+        border-radius: 7px;
+        margin: 10px 0 0 0;
+        position: relative;
+     }
+     .msg-from  .msg-from-container .arrow-right{
+        top: 18px;
+        width: 0;
+        height: 0;
+        border-top: 12px solid transparent;
+        border-bottom: 0px solid transparent;
+        border-left: 15px solid #1476c6;
+        position: absolute;
+        right: -8px;
+    }
+    .msg-from .msg-from-container  p.text-date{
+        font-size: 10px;
+        color: #bbb;
+        display: block;
+        text-align: right;
+    }
+
+    .msg-from .msg-from-container{
+        text-align: right;
+      }
+        .msg-from  .msg-from-container p.text-paragraph{
+          background-color: #1476c6;;
+          color: #FFF;
+          padding: 5px 10px;
+          display: inline-block;
+          border-radius: 7px;
+          margin: 10px 0 0 0;
+          position: relative;
+       }
+       .msg-from  .msg-from-container .arrow-right{
+          top: 18px;
+          width: 0;
+          height: 0;
+          border-top: 12px solid transparent;
+          border-bottom: 0px solid transparent;
+          border-left: 15px solid #1476c6;
+          position: absolute;
+          right: -8px;
+      }
+      .msg-from .msg-from-container  p.text-date{
+          font-size: 10px;
+          color: #bbb;
+          display: block;
+          text-align: right;
+      }

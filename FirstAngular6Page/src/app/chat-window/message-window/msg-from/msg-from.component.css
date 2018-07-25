@@ -1,0 +1,48 @@
+.msg-to{
+    text-align: left;
+}
+.msg-to p.text-date{
+      font-size: 10px;
+      color: #bbb;
+      display: block;
+      text-align: left;
+      margin-left:45px;
+    }
+    .msg-to .text-paragraph{
+      background-color:#DDD;
+      color: #666;    
+      padding: 5px 10px;
+      display: inline-block;
+      border-radius: 7px;
+      margin: 10px 0 10px 0;
+      position: relative;
+      left:30px;
+      max-width:90%;
+    }
+  
+    .msg-to span.chatbot-icon{
+      display: block;
+      left: -38px;
+      height: 56px;
+      width: 33px;
+      background-size: contain;
+      background-image: url("../../../../assets/images/chatbot-ico.png");
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+    .msg-to .arrow-left {
+      width: 0; 
+      height: 0; 
+      border-top: 12px solid transparent;
+      border-bottom: 0px solid transparent; 
+      border-right:15px solid #DDD; 
+      position: absolute;
+      left: -9px;
+      top:18px;
+      
+    }
+  
+    .msg-to .graph-section{
+      overflow: visible;
+      HEIGHT: 450px;
+    }

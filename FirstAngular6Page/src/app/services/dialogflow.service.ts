@@ -11,7 +11,7 @@ import { environment } from "../../environments/environment";
 @Injectable()
 
 
-export class DialogflowService implements OnInit {
+export class DialogflowService {
     private accessToken = environment.accessToken;
     private httpOptions = {
         headers: new HttpHeaders({
@@ -26,10 +26,6 @@ export class DialogflowService implements OnInit {
 
     constructor(private http: HttpClient) { }
 
-
-    ngOnInit() {
-
-    }
     onConversation(query: string): Observable<any> {
         // var query = checkQuery(_query);
         var data = {
